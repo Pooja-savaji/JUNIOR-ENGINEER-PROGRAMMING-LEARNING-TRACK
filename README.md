@@ -14,7 +14,7 @@ Each module in this track follows a structured progression:
 
 | Skill | Learned | Project Ready | Independent |
 | :--- | :---: | :---: | :---: |
-| 01. Python Fundamentals | [ ] | [ ] | [ ] |
+| 01. Python Fundamentals | [x] | [x] | [x] |
 | 02. OOP & Modular Design | [ ] | [ ] | [ ] |
 | 03. Pandas & Excel | [ ] | [ ] | [ ] |
 | 04. SQLite | [ ] | [ ] | [ ] |

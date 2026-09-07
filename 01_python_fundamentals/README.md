@@ -4,6 +4,6 @@ Core Python syntax, data types, control flow, functions, and standard library to
 
 ## Progress
 
-- [ ] Learned
-- [ ] Project Ready
-- [ ] Independent
+- [x] Learned
+- [x] Project Ready
+- [x] Independent
