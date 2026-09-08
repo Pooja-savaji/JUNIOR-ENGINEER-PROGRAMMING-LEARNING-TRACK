@@ -1,6 +1,6 @@
 # Python Fundamentals
 
-Core Python syntax, data types, control flow, functions, string manipulation, pattern generation, searching/filtering, and standard library tools.
+Core Python syntax, data types, control flow, functions, string manipulation, pattern generation, searching/filtering, dictionary record systems, and standard library tools.
 
 ## Included Fundamentals Programs (`learned/`)
 - `calculator.py`: Interactive CLI calculator with arithmetic, exponents, square roots, percentages, and calculation history.
@@ -12,6 +12,9 @@ Core Python syntax, data types, control flow, functions, string manipulation, pa
 - `pattern_generation.py`: Step-by-step nested loop geometric patterns (triangles, pyramids, diamonds, Floyd's triangle, hollow squares).
 - `search_filter_problems.py`: Linear search, binary search, range filtering, duplicate detection, and dictionary/record filtering.
 - `menu_loops.py`: Practical menu loop patterns, safe user input validation, confirmation prompts, and a mini contact manager.
+- `inventory_manager.py`: Product stock tracking, restock and sales management, low-stock threshold alerts, and total inventory valuation.
+- `employee_directory.py`: Staff member records, departmental headcounts, salary analytics, and search/filter operations.
+- `transaction_aggregation.py`: Financial transaction processing, income vs. expense balance, category distribution, and ASCII summary reports.
 
 ## Progress
 
