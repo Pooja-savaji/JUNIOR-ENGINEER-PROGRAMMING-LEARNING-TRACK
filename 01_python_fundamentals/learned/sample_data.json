@@ -1,0 +1,27 @@
+{
+  "company": "Delta IoT Solutions",
+  "exported_at": "2024-01-15",
+  "employees": [
+    {"id": 101, "name": "Alice Smith",   "department": "Engineering",
+     "salary": 75000, "active": true,  "email": "alice@deltaiot.com",
+     "joined": "2021-03-10", "skills": ["Python", "SQL", "Docker"]},
+    {"id": 102, "name": "Bob Jones",     "department": "Sales",
+     "salary": 55000, "active": true,  "email": "bob@deltaiot.com",
+     "joined": "2020-07-22", "skills": ["CRM", "Excel"]},
+    {"id": 103, "name": "Carol White",   "department": "Engineering",
+     "salary": 82000, "active": false, "email": "carol@deltaiot.com",
+     "joined": "2019-11-01", "skills": ["Python", "Kubernetes", "Go"]},
+    {"id": 104, "name": "David Lee",     "department": "HR",
+     "salary": 48000, "active": true,  "email": "david@deltaiot.com",
+     "joined": "2022-01-15", "skills": ["HRIS", "Excel", "Reporting"]},
+    {"id": 105, "name": "Eva Martinez",  "department": "Engineering",
+     "salary": 91000, "active": true,  "email": "eva@deltaiot.com",
+     "joined": "2018-06-05", "skills": ["Python", "ML", "TensorFlow"]},
+    {"id": 106, "name": "Frank Brown",   "department": "Sales",
+     "salary": 62000, "active": false, "email": "frank@deltaiot.com",
+     "joined": "2021-09-14", "skills": ["CRM", "Negotiation"]},
+    {"id": 107, "name": "Grace Kim",     "department": "Engineering",
+     "salary": 78000, "active": true,  "email": "grace@deltaiot.com",
+     "joined": "2020-02-28", "skills": ["Java", "Spring", "SQL"]}
+  ]
+}

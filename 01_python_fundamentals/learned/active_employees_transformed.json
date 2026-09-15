@@ -1,0 +1,76 @@
+[
+  {
+    "id": 101,
+    "name": "Alice Smith",
+    "department": "Engineering",
+    "salary": 75000,
+    "active": true,
+    "email": "alice@deltaiot.com",
+    "joined": "2021-03-10",
+    "skills": [
+      "Python",
+      "SQL",
+      "Docker"
+    ],
+    "bonus": 7500
+  },
+  {
+    "id": 102,
+    "name": "Bob Jones",
+    "department": "Sales",
+    "salary": 55000,
+    "active": true,
+    "email": "bob@deltaiot.com",
+    "joined": "2020-07-22",
+    "skills": [
+      "CRM",
+      "Excel"
+    ],
+    "bonus": 5500
+  },
+  {
+    "id": 104,
+    "name": "David Lee",
+    "department": "HR",
+    "salary": 48000,
+    "active": true,
+    "email": "david@deltaiot.com",
+    "joined": "2022-01-15",
+    "skills": [
+      "HRIS",
+      "Excel",
+      "Reporting"
+    ],
+    "bonus": 4800
+  },
+  {
+    "id": 105,
+    "name": "Eva Martinez",
+    "department": "Engineering",
+    "salary": 91000,
+    "active": true,
+    "email": "eva@deltaiot.com",
+    "joined": "2018-06-05",
+    "skills": [
+      "Python",
+      "ML",
+      "TensorFlow"
+    ],
+    "bonus": 9100
+  },
+  {
+    "id": 107,
+    "name": "Grace Kim",
+    "department": "Engineering",
+    "salary": 78000,
+    "active": true,
+    "email": "grace@deltaiot.com",
+    "joined": "2020-02-28",
+    "skills": [
+      "Java",
+      "Spring",
+      "SQL"
+    ],
+    "bonus": 7800
+  }
+]
