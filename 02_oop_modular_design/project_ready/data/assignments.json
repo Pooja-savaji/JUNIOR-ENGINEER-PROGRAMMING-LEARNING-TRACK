@@ -1,0 +1,22 @@
+[
+  {
+    "assignment_id": "ASN-91D94952",
+    "asset_id": "AST-1001",
+    "emp_id": "EMP-101",
+    "assigned_at": "2026-09-15T11:40:44.507952",
+    "returned_at": "2026-09-15T11:40:44.515491",
+    "condition_on_checkout": "Mint",
+    "condition_on_return": "Good",
+    "notes": "New developer kit | Return note: Project concluded"
+  },
+  {
+    "assignment_id": "ASN-9F69CBCA",
+    "asset_id": "AST-1004",
+    "emp_id": "EMP-102",
+    "assigned_at": "2026-09-15T11:40:44.513842",
+    "returned_at": null,
+    "condition_on_checkout": "Good",
+    "condition_on_return": null,
+    "notes": "Backend engineering"
+  }
+]

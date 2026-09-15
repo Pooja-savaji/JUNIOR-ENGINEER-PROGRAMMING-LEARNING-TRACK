@@ -9,9 +9,18 @@ Object-oriented programming principles, classes, inheritance, encapsulation, abs
 - `04_magic_dunder_methods.py`: Domain value object (`Money`) with exact decimal precision, string representations (`__repr__`, `__str__`), equality & hashing (`__eq__`, `__hash__`), arithmetic operator overloading (`+`, `-`, `*`, `/`), total ordering (`<`, `<=`), container protocol collection (`AssetPortfolio`), and context manager (`SafeTransactionScope`) for atomic rollback safety.
 - `05_dataclasses_and_domain_models.py`: Enterprise asset models (`User`, `MaintenanceLog`, `HardwareAsset`) utilizing `@dataclass`, `frozen=True` immutability, `__post_init__` invariant validation, straight-line depreciation calculation, and bidirectional JSON serialization (`to_dict`, `from_dict`, `to_json`, `from_json`).
 
+## Included Project-Ready Application (`project_ready/`)
+- `asset_tracker/`: 4-tier layered enterprise IT Asset Management System:
+  - `models/`: Domain hierarchy with `Asset` (ABC), `HardwareAsset`, `SoftwareLicense`, `Employee`, and `AssignmentRecord`.
+  - `exceptions/`: Domain exception hierarchy (`AssetNotFoundError`, `AssetAlreadyAssignedError`, `LicenseSeatsExhaustedError`, etc.).
+  - `repositories/`: Persistence abstraction with `BaseRepository[T]` ABC, `JsonRepository[T]` (atomic file persistence), and `InMemoryRepository[T]` (mock testing double).
+  - `services/`: `AssetService` business orchestrator for deployments, straight-line inventory depreciation, and operational audit metrics.
+  - `cli/`: `ConsoleApp` terminal presentation layer with interactive menu and `--demo` walkthrough runner.
+  - `tests/`: Automated unit test suite with 100% passing tests for business logic, error conditions, and inventory valuations.
+
 ## Progress
 
 - [x] Learned
-- [ ] Project Ready
+- [x] Project Ready
 - [ ] Independent
 
