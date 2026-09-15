@@ -1,0 +1,70 @@
+[
+  {
+    "order_id": "ORD-EF3ED177",
+    "customer_id": "CUST-002",
+    "status": "DELIVERED",
+    "discount_rate": 0.1,
+    "shipping_fee": "15.00",
+    "currency": "USD",
+    "created_at": "2026-09-15T11:46:29.418955",
+    "tracking_number": "FEDEX-998822",
+    "notes": "",
+    "items": [
+      {
+        "product_id": "PROD-A",
+        "product_name": "IoT Gateway Gateway Node",
+        "unit_price": "250.00",
+        "currency": "USD",
+        "quantity": 2
+      },
+      {
+        "product_id": "PROD-B",
+        "product_name": "Industrial Temperature Sensor",
+        "unit_price": "45.00",
+        "currency": "USD",
+        "quantity": 4
+      }
+    ],
+    "subtotal": "680.00",
+    "discount": "68.00",
+    "total": "627.00"
+  },
+  {
+    "order_id": "ORD-C74ED613",
+    "customer_id": "CUST-001",
+    "status": "PENDING",
+    "discount_rate": 0.0,
+    "shipping_fee": "0.00",
+    "currency": "USD",
+    "created_at": "2026-09-15T11:46:29.424589",
+    "tracking_number": null,
+    "notes": "",
+    "items": [],
+    "subtotal": "0.00",
+    "discount": "0.00",
+    "total": "0.00"
+  },
+  {
+    "order_id": "ORD-1279057A",
+    "customer_id": "CUST-001",
+    "status": "CANCELLED",
+    "discount_rate": 0.0,
+    "shipping_fee": "0.00",
+    "currency": "USD",
+    "created_at": "2026-09-15T11:46:29.435260",
+    "tracking_number": null,
+    "notes": "Cancel reason: Customer requested cancellation",
+    "items": [
+      {
+        "product_id": "PROD-C",
+        "product_name": "Sensor Cable 5m",
+        "unit_price": "15.00",
+        "currency": "USD",
+        "quantity": 1
+      }
+    ],
+    "subtotal": "15.00",
+    "discount": "0.00",
+    "total": "15.00"
+  }
+]

@@ -18,9 +18,18 @@ Object-oriented programming principles, classes, inheritance, encapsulation, abs
   - `cli/`: `ConsoleApp` terminal presentation layer with interactive menu and `--demo` walkthrough runner.
   - `tests/`: Automated unit test suite with 100% passing tests for business logic, error conditions, and inventory valuations.
 
+## Included Independent Application (`independent/`)
+- `order_service/`: 4-tier domain-driven Mini Order-Management System:
+  - `domain/`: Pure domain models (`Order`, `OrderItem`, `Customer`, `Money` value object with Decimal precision, `OrderStatus` FSM), and domain error hierarchy.
+  - `repositories/`: `BaseRepository[T]` interface, `MockRepository[T]` for unit testing, and `JsonFileRepository[T]` for atomic file persistence.
+  - `services/`: `OrderService` handling draft orders, tier-based discounts, state transitions, item adjustments, and sales analytics.
+  - `cli/`: `OrderConsoleApp` terminal menu and `--demo` automated end-to-end runner.
+  - `tests/`: Comprehensive unit test suite with 11 hermetic tests covering invariants, pricing, and lifecycle state rules.
+
 ## Progress
 
 - [x] Learned
 - [x] Project Ready
-- [ ] Independent
+- [x] Independent
+
 
