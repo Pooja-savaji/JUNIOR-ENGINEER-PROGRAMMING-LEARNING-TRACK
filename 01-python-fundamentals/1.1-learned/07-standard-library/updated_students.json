@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Pooja",
+        "marks": 85,
+        "status": "Active"
+    },
+    {
+        "name": "Riya",
+        "marks": 90,
+        "status": "Active"
+    },
+    {
+        "name": "Neha",
+        "marks": 78,
+        "status": "Active"
+    }
+]
