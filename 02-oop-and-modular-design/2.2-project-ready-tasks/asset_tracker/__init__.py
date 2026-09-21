@@ -1,1 +1,0 @@
-"""Asset Tracker application package."""
