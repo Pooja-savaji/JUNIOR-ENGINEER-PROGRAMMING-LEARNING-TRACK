@@ -13,13 +13,13 @@
 - Merged a branch using `git merge`
 
 ## Git Commands Practiced
-git init
-git status
-git add README.md
-git commit -m "ADD README"
-git log --oneline
-git diff
-git restore README.md
-git switch -c feature-test
-git switch master
+git init ,
+git status ,
+git add README.md ,
+git commit -m "ADD README" , 
+git log --oneline ,
+git diff , 
+git restore README.md ,
+git switch -c feature-test ,
+git switch master ,
 git merge feature-test
