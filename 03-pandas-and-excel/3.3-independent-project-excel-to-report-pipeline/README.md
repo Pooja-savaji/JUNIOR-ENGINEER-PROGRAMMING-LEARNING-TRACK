@@ -1,9 +1,18 @@
 # Excel-to-Report Pipeline
- 1.Overview
-This project is a reusable Excel-to-Report data pipeline built using Python, Pandas, and OpenPyXL.
-The pipeline reads employee data from an Excel file, validates the data, performs transformations, and generates a final Excel report with an error summary.
 
-2.Project Structure
+## 1. Overview
+This project is a reusable **Excel-to-Report data pipeline** built using Python, Pandas, and OpenPyXL.
+The pipeline:
+* Reads employee data from an Excel file
+* Validates the data
+* Cleans and converts the data
+* Performs data transformations
+* Generates an Excel report
+* Generates an error summary
+
+## 2. Project Structure
+'''
+
 3.3-independent-project-excel-to-report-pipeline/
 │
 ├── data/
@@ -19,23 +28,24 @@ The pipeline reads employee data from an Excel file, validates the data, perform
 │   └── test_pipeline.py
 │
 └── README.md
+```
 
- 3.Technologies Used
-
+## 3. Technologies Used
 * Python
 * Pandas
 * OpenPyXL
 * Excel
 * Pytest
 
-4.Input Data
+## 4. Input Data
 The input Excel file contains employee information.
-Required columns:
+
+### Required Columns
 * Name
 * Age
 * Salary
 
-Example:
+### Example
 
 | Name  | Age | Salary |
 | ----- | --: | -----: |
@@ -43,24 +53,26 @@ Example:
 | Rahul |  22 |  35000 |
 | Sneha |  21 |  32000 |
 
- 5.Pipeline Workflow
+## 5. Pipeline Workflow
 
+```text
 Excel Input
-     ↓
+    ↓
 Read Excel File
-     ↓
+    ↓
 Validate Data
-     ↓
+    ↓
 Clean and Convert Data
-     ↓
+    ↓
 Transform Data
-     ↓
+    ↓
 Generate Report
-     ↓
+    ↓
 Generate Error Summary
+```
 
+## 6. Validation
 
-6. Validation
 The pipeline checks:
 * Required columns
 * Missing values
@@ -68,15 +80,15 @@ The pipeline checks:
 * Valid salary values
 * Invalid data
 
- 7.Data Transformation
+## 7. Data Transformation
 The pipeline calculates annual salary using:
-Annual Salary = Monthly Salary × 12
 
 
-8. Output
+## 8. Output
 The pipeline generates an Excel report containing two sheets.
 
- A.Report Sheet
+### A. Report Sheet
+
 Contains the processed employee data.
 
 | Name  | Age | Salary | Annual Salary |
@@ -85,9 +97,10 @@ Contains the processed employee data.
 | Rahul |  22 |  35000 |        420000 |
 | Sneha |  21 |  32000 |        384000 |
 
- B.Error Summary Sheet
+### B. Error Summary Sheet
 
 Contains errors found during validation.
+
 Example:
 
 | Errors                 |
@@ -95,8 +108,10 @@ Example:
 | Missing column: Salary |
 | Invalid age found      |
 
-9.Assumptions
+## 9. Assumptions
+docs/assumptions.md
 Project assumptions are documented in:docs/assumptions.md
+
 Main assumptions:
 * Name, Age, and Salary are required columns.
 * Age must be a valid number.
@@ -105,17 +120,18 @@ Main assumptions:
 * Annual Salary is calculated using Monthly Salary × 12.
 * The original input file is not modified.
 
- 10.Testing
-Tests are available in:tests/test_pipeline.py
-Run the tests using:pytest
+## 10. Testing
+Tests are available in: tests/test_pipeline.py
+Run the tests using: pytest
 
-11.How to Run
- 1. Install dependencies: pip install pandas openpyxl pytest
- 2. Add the input file- Place the Excel file inside:data/input.xlsx
- 3. Run the pipeline:python src/pipeline.py
- 4. Check the output-The generated report will be created as:data/report.xlsx
+## 11. How to Run
+### Step 1: Install Dependencies :pip install pandas openpyxl pytest
+### Step 2: Add the Input File: Place the Excel file inside = data/input.xlsx
+### Step 3: Run the Pipeline : python src/pipeline.py
+### Step 4: Check the Output: data/report.xlsx
 
-12.Project Goal
+
+## 12. Project Goal
 The goal of this project is to demonstrate the ability to independently build a small and reusable Excel data-processing pipeline.
 This project covers:
 * Excel data handling
@@ -126,5 +142,3 @@ This project covers:
 * Excel report generation
 * Testing
 * Documentation
-
-
