@@ -11,7 +11,6 @@ The pipeline:
 * Generates an error summary
 
 ## 2. Project Structure
-'''
 
 3.3-independent-project-excel-to-report-pipeline/
 │
@@ -28,7 +27,7 @@ The pipeline:
 │   └── test_pipeline.py
 │
 └── README.md
-```
+
 
 ## 3. Technologies Used
 * Python
@@ -54,8 +53,6 @@ The input Excel file contains employee information.
 | Sneha |  21 |  32000 |
 
 ## 5. Pipeline Workflow
-
-```text
 Excel Input
     ↓
 Read Excel File
@@ -69,7 +66,7 @@ Transform Data
 Generate Report
     ↓
 Generate Error Summary
-```
+
 
 ## 6. Validation
 
