@@ -1,0 +1,155 @@
+hp@POOJA MINGW64 ~/git-practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+hp@POOJA MINGW64 ~/git-practice (master)
+$ git switch -c feature-student-info
+Switched to a new branch 'feature-student-info'
+
+hp@POOJA MINGW64 ~/git-practice (feature-student-info)
+$ echo Name: Pooja >> student.txt
+echo Course: B.Tech CSE >> student.txt
+
+hp@POOJA MINGW64 ~/git-practice (feature-student-info)
+$ ^[[200~git add student.txt
+bash: $'\E[200~git': command not found
+git commit -m "Add student info"git commit -m "Add student info"
+hp@POOJA MINGW64 ~/git-practice (feature-student-info)
+$ git commit -m "Add student info"
+On branch feature-student-info
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        student.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@POOJA MINGW64 ~/git-practice (feature-student-info)
+$ echo Name: Pooja >> student.txt
+echo Course: B.Tech CSE >> student.txt
+
+
+cat student.txt
+Name: Pooja
+Course: B.Tech CSE
+Name: Pooja
+Course: B.Tech CSE
+
+hp@POOJA MINGW64 ~/git-practice (feature-student-info)
+$ printf "Name: Pooja\nCourse: B.Tech CSE\n" > student.txt
+
+hp@POOJA MINGW64 ~/git-practice (feature-student-info)
+$
+cat student.txt
+Name: Pooja
+Course: B.Tech CSE
+
+hp@POOJA MINGW64 ~/git-practice (feature-student-info)
+$ git add student.txt
+warning: in the working copy of 'student.txt', LF will be replaced by CRLF the next time Git touches it
+
+hp@POOJA MINGW64 ~/git-practice (feature-student-info)
+$ git commit -m "Add student info"
+[feature-student-info aef4208] Add student info
+ 1 file changed, 2 insertions(+)
+ create mode 100644 student.txt
+
+hp@POOJA MINGW64 ~/git-practice (feature-student-info)
+$ git switch master
+Switched to branch 'master'
+
+hp@POOJA MINGW64 ~/git-practice (master)
+$ git merge feature-student-info
+Updating 5026cc7..aef4208
+Fast-forward
+ student.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 student.txt
+
+hp@POOJA MINGW64 ~/git-practice (master)
+$ git switch -c feature-skills
+Switched to a new branch 'feature-skills'
+
+hp@POOJA MINGW64 ~/git-practice (feature-skills)
+$ echo Skills: Python, SQL, Git >> student.txt
+
+hp@POOJA MINGW64 ~/git-practice (feature-skills)
+$ cat student.txt
+Name: Pooja
+Course: B.Tech CSE
+Skills: Python, SQL, Git
+
+hp@POOJA MINGW64 ~/git-practice (feature-skills)
+$ git add student.txt
+warning: in the working copy of 'student.txt', LF will be replaced by CRLF the next time Git touches it
+
+hp@POOJA MINGW64 ~/git-practice (feature-skills)
+$ git commit -m "Add student skills"
+[feature-skills 0f71073] Add student skills
+ 1 file changed, 1 insertion(+)
+
+hp@POOJA MINGW64 ~/git-practice (feature-skills)
+$ git switch master
+Switched to branch 'master'
+
+hp@POOJA MINGW64 ~/git-practice (master)
+$ git merge feature-skills
+Updating aef4208..0f71073
+Fast-forward
+ student.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+hp@POOJA MINGW64 ~/git-practice (master)
+$ git switch -c feature-contact
+Switched to a new branch 'feature-contact'
+
+hp@POOJA MINGW64 ~/git-practice (feature-contact)
+$ echo Email: student@example.com >> student.txt
+
+hp@POOJA MINGW64 ~/git-practice (feature-contact)
+$ cat student.txt
+Name: Pooja
+Course: B.Tech CSE
+Skills: Python, SQL, Git
+Email: student@example.com
+
+hp@POOJA MINGW64 ~/git-practice (feature-contact)
+$ git add student.txt
+warning: in the working copy of 'student.txt', LF will be replaced by CRLF the next time Git touches it
+
+hp@POOJA MINGW64 ~/git-practice (feature-contact)
+$ git commit -m "Add contact info"
+[feature-contact 78e24bb] Add contact info
+ 1 file changed, 1 insertion(+)
+
+hp@POOJA MINGW64 ~/git-practice (feature-contact)
+$ git switch master
+Switched to branch 'master'
+
+hp@POOJA MINGW64 ~/git-practice (master)
+$ git merge feature-contact\
+> git merge feature-contact
+merge: feature-contactgit - not something we can merge
+
+hp@POOJA MINGW64 ~/git-practice (master)
+$ git merge feature-contact
+Updating 0f71073..78e24bb
+Fast-forward
+ student.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+hp@POOJA MINGW64 ~/git-practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+hp@POOJA MINGW64 ~/git-practice (master)
+$
+git log --oneline --graph --all
+* 78e24bb (HEAD -> master, feature-contact) Add contact info
+* 0f71073 (feature-skills) Add student skills
+* aef4208 (feature-student-info) Add student info
+* 5026cc7 (feature-test) Add feature work
+* 5a1bddb Update README
+* 7cf32cb ADD README
+
