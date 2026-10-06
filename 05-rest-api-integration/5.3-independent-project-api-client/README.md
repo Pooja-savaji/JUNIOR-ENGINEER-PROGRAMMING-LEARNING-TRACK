@@ -33,9 +33,10 @@ The client supports authentication, pagination, timeout handling, API errors, an
 - Testing API code without using a live service
 
 ## How to Run
-
 Install the required packages: pip install requests pytest
+
 Run the API client: python src/api_client.py
+
 Run the tests: pytest
 
 ## Expected Test Result
